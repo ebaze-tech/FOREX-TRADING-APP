@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import API_URL from "../lib/utils";
+import { API_URL } from "../lib/utils";
 
 const ResetPassword = () => {
   const { token } = useParams();

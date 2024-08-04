@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import API_URL from "../lib/utils";
+import { API_URL } from "../lib/utils";
 
 const Logout = () => {
   const navigate = useNavigate();

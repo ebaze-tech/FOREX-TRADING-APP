@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import API_URL from "../lib/utils";
+import { API_URL } from "../lib/utils";
 
 const Protected = () => {
   const [userData, setUserData] = useState(null);

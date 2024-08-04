@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import API_URL from "../lib/utils";
+import { API_URL } from "../lib/utils";
 import axios from "axios";
 
 const PaymentCallback = () => {
