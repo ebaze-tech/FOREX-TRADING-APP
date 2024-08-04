@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { API_URL } from "../lib/utils";
+import API_URL from "../lib/utils";
 
 const PaymentSuccess = () => {
   const [subscriptionDetails, setSubscriptionDetails] = useState(null);

@@ -1,5 +1,5 @@
 import React from "react";
-import { API_URL } from "../lib/utils";
+import API_URL from "../lib/utils";
 
 const DeleteSubscription = () => {
   const handleDelete = async () => {

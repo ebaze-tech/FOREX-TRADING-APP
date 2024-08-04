@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { API_URL } from "../lib/utils";
+import API_URL from "../lib/utils";
 
 const ViewSubscription = () => {
   const [subscription, setSubscription] = useState(null);

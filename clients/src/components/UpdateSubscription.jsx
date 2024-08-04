@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { API_URL } from "../lib/utils";
+import API_URL from "../lib/utils";
 
 const UpdateSubscription = () => {
   const [plan, setPlan] = useState("");

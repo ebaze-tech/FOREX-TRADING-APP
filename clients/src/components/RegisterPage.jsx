@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { API_URL } from "../lib/utils";
+import API_URL from "../lib/utils";
 
 const Register = () => {
   const [email, setEmail] = useState("");
