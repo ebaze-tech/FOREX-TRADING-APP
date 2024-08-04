@@ -13,7 +13,6 @@ const PaymentSuccess = () => {
     if (reference) {
       // Verify payment on the server
       const verifyPayment = async () => {
-import { API_URL } from "../lib/utils";
         try {
           const response = await fetch(
             `${API_URL}/api/subscription/payment/verify`,
