@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const { JWT_SECRET } = process.env;
 dotenv.config();
 
-const allowedOrigins = ["http://localhost:5174", "http://localhost:5173"];
+const allowedOrigins = ["https://forex-trading-murex.vercel.app"];
 
 // Session middleware
 app.use(
@@ -30,7 +30,7 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: false, // true in production
+      secure: true, // true in production
       httpOnly: true,
     },
   })
