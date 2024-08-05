@@ -21,7 +21,7 @@ const PaymentCallback = () => {
         console.log("Verifying payment with reference:", reference);
 
         const response = await axios.post(
-          "https://forex-trading-app-iqbg.onrender.com/api/subscription/payment/verify",
+          "https://forex-trading-app-2.onrender.com/api/subscription/payment/verify",
           {
             reference: reference,
           }

@@ -34,7 +34,7 @@ const CreateSubscription = () => {
 
     try {
       const response = await fetch(
-        "https://forex-trading-app-iqbg.onrender.com/api/subscription/create/subscription",
+        "https://forex-trading-app-2.onrender.com/api/subscription/create/subscription",
         {
           method: "POST",
           headers: {

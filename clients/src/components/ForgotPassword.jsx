@@ -11,7 +11,7 @@ const ForgotPassword = () => {
 
     try {
       const response = await fetch(
-        "https://forex-trading-app-iqbg.onrender.com/api/auth/forgot/password",
+        "https://forex-trading-app-2.onrender.com/api/auth/forgot/password",
         {
           method: "POST",
           headers: {

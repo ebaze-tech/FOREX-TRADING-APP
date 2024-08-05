@@ -9,7 +9,7 @@ const ViewSubscription = () => {
     const fetchSubscription = async () => {
       try {
         const response = await fetch(
-          "https://forex-trading-app-iqbg.onrender.com/api/subscription/get/subscription",
+          "https://forex-trading-app-2.onrender.com/api/subscription/get/subscription",
           {
             method: "POST",
             headers: {

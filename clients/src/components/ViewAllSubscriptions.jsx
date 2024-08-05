@@ -9,7 +9,7 @@ const ViewAllSubscriptions = () => {
     const fetchSubscriptions = async () => {
       try {
         const response = await fetch(
-          "https://forex-trading-app-iqbg.onrender.com/api/subscription/all/subscriptions",
+          "https://forex-trading-app-2.onrender.com/api/subscription/all/subscriptions",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

@@ -23,7 +23,7 @@ const UpdateSubscription = () => {
 
     try {
       const response = await fetch(
-        "https://forex-trading-app-iqbg.onrender.com/api/subscription/update/subscription",
+        "https://forex-trading-app-2.onrender.com/api/subscription/update/subscription",
         {
           method: "PUT",
           headers: {

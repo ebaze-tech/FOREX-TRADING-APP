@@ -8,7 +8,7 @@ const Logout = () => {
   const handleLogout = async () => {
     try {
       await fetch(
-        "https://forex-trading-app-iqbg.onrender.com//api/auth/logout",
+        "https://forex-trading-app-2.onrender.com//api/auth/logout",
         {
           method: "POST",
           headers: {

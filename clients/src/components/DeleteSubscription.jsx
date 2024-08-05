@@ -5,7 +5,7 @@ const DeleteSubscription = () => {
   const handleDelete = async () => {
     try {
       const response = await fetch(
-        "https://forex-trading-app-iqbg.onrender.com/api/subscription/delete/subscription",
+        "https://forex-trading-app-2.onrender.com/api/subscription/delete/subscription",
         {
           method: "DELETE",
           headers: {

@@ -10,7 +10,7 @@ const useAuth = () => {
     const checkAuth = async () => {
       try {
         const response = await fetch(
-          "https://forex-trading-app-iqbg.onrender.com/api/auth/check",
+          "https://forex-trading-app-2.onrender.com/api/auth/check",
           {
             method: "GET",
             headers: {

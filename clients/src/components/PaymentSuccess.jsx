@@ -15,7 +15,7 @@ const PaymentSuccess = () => {
       const verifyPayment = async () => {
         try {
           const response = await fetch(
-            "https://forex-trading-app-iqbg.onrender.com/api/subscription/payment/verify",
+            "https://forex-trading-app-2.onrender.com/api/subscription/payment/verify",
             {
               method: "POST",
               headers: {
