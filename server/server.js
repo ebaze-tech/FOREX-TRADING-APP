@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const { JWT_SECRET } = process.env;
 dotenv.config();
 
-const allowedOrigins = ["https://forex-trading-murex.vercel.app"];
+const allowedOrigins = ["https://forex-trading-git-master-toluwanimi-faramades-projects.vercel.app/"];
 
 // Session middleware
 app.use(
