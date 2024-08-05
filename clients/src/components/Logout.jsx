@@ -1,19 +1,22 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { API_URL } from "../lib/utils";
+// import { API_URL } from "../lib/utils";
 
 const Logout = () => {
   const navigate = useNavigate();
 
   const handleLogout = async () => {
     try {
-      await fetch(`${API_URL}/api/auth/logout`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-      });
+      await fetch(
+        "https://forex-trading-app-iqbg.onrender.com//api/auth/logout",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        }
+      );
 
       localStorage.removeItem("token"); // Remove token from storage
       navigate("/login"); // Redirect to login page

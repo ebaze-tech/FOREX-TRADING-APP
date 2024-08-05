@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import  API_URL from "../lib/utils";
+// import  API_URL from "../lib/utils";
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
@@ -11,7 +11,7 @@ const ForgotPassword = () => {
 
     try {
       const response = await fetch(
-        `${API_URL}/api/auth/forgot-password`,
+        "https://forex-trading-app-iqbg.onrender.com/api/auth/forgot/password",
         {
           method: "POST",
           headers: {

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { API_URL } from "../lib/utils";
+// import { API_URL } from "../lib/utils";
 
 const Protected = () => {
   const [userData, setUserData] = useState(null);
@@ -20,13 +20,16 @@ const Protected = () => {
     // Fetch protected data
     const fetchProtectedData = async () => {
       try {
-        const response = await fetch(`${API_URL}/api/protected-data`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-        });
+        const response = await fetch(
+          "https://forex-trading-app-iqbg.onrender.com/api/protected-data",
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
 
         const data = await response.json();
         if (response.ok) {

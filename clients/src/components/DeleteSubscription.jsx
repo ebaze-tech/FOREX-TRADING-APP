@@ -1,11 +1,11 @@
 import React from "react";
-import { API_URL } from "../lib/utils";
+// import { API_URL } from "../lib/utils";
 
 const DeleteSubscription = () => {
   const handleDelete = async () => {
     try {
       const response = await fetch(
-        `${API_URL}/api/subscription/delete_subscription`,
+        "https://forex-trading-app-iqbg.onrender.com/api/subscription/delete/subscription",
         {
           method: "DELETE",
           headers: {

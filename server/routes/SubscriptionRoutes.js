@@ -5,34 +5,34 @@ const SubscriptionAuth = require("../middleware/SubscriptionAuth"); // Authentic
 
 // Create a subscription
 router.post(
-  "/create_subscription",
+  "/create/subscription",
   SubscriptionAuth,
   SubscriptionController.createSubscription
 );
 
 // Get subscription details
 router.get(
-  "/get_subscription",
+  "/get/subscription",
   SubscriptionAuth,
   SubscriptionController.getSubscription
 );
 
 // Update subscription
 router.put(
-  "/update_subscription",
+  "/update/subscription",
   SubscriptionAuth,
   SubscriptionController.updateSubscription
 );
 
 // Delete subscription
 router.delete(
-  "/delete_subscription",
+  "/delete/subscription",
   SubscriptionAuth,
   SubscriptionController.deleteSubscription
 );
 
 router.get(
-  "/all_subscriptions",
+  "/all/subscriptions",
   SubscriptionAuth,
   SubscriptionController.getAllSubscriptions
 );

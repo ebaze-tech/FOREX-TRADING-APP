@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { API_URL } from "../lib/utils";
+// import { API_URL } from "../lib/utils";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -13,13 +13,16 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${API_URL}/api/auth/login`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password, rememberMe }),
-      });
+      const response = await fetch(
+        "https://forex-trading-app-iqbg.onrender.com/api/auth/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, password, rememberMe }),
+        }
+      );
 
       const result = await response.json();
 

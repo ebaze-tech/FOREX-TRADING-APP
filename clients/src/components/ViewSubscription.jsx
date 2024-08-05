@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { API_URL } from "../lib/utils";
+// import { API_URL } from "../lib/utils";
 
 const ViewSubscription = () => {
   const [subscription, setSubscription] = useState(null);
@@ -8,11 +8,15 @@ const ViewSubscription = () => {
   useEffect(() => {
     const fetchSubscription = async () => {
       try {
-        const response = await fetch(`${API_URL}/api/subscription/get_subscription`, {
-          headers: {
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
-          },
-        });
+        const response = await fetch(
+          "https://forex-trading-app-iqbg.onrender.com/api/subscription/get/subscription",
+          {
+            method: "POST",
+            headers: {
+              Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
+          }
+        );
 
         const data = await response.json();
         if (response.ok) {

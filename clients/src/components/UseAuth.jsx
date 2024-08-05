@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { API_URL } from "../lib/utils";
+// import { API_URL } from "../lib/utils";
 
 const useAuth = () => {
   const [authenticated, setAuthenticated] = useState(false);
@@ -9,12 +9,15 @@ const useAuth = () => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const response = await fetch(`${API_URL}/api/auth/check`, {
-          method: "GET",
-          headers: {
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
-          },
-        });
+        const response = await fetch(
+          "https://forex-trading-app-iqbg.onrender.com/api/auth/check",
+          {
+            method: "GET",
+            headers: {
+              Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
+          }
+        );
         if (response.ok) {
           setAuthenticated(true);
         } else {

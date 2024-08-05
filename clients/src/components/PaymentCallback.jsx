@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { API_URL } from "../lib/utils";
+// import { API_URL } from "../lib/utils";
 import axios from "axios";
 
 const PaymentCallback = () => {
-//   const [trxref, setTrxref] = useState("");
+  //   const [trxref, setTrxref] = useState("");
   const [reference, setReference] = useState("");
   const [error, setError] = useState(null);
   const navigate = useNavigate();
@@ -18,11 +18,10 @@ const PaymentCallback = () => {
     // Handle the payment callback logic here
     const verifyPayment = async (reference) => {
       try {
-
         console.log("Verifying payment with reference:", reference);
 
         const response = await axios.post(
-          `${API_URL}/api/subscription/payment/verify`,
+          "https://forex-trading-app-iqbg.onrender.com/api/subscription/payment/verify",
           {
             reference: reference,
           }
@@ -42,7 +41,7 @@ const PaymentCallback = () => {
     };
 
     if (referenceValue) {
-    //   setTrxref(trxrefValue);
+      //   setTrxref(trxrefValue);
       setReference(referenceValue);
       verifyPayment(referenceValue);
     } else {

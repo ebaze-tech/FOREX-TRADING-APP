@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import { API_URL } from "../lib/utils";
-import { API_URL } from "../lib/utils";
+// import { API_URL } from "../lib/utils";
 
 const UpdateSubscription = () => {
-  const [plan, setPlan] = useState("");1
+  const [plan, setPlan] = useState("");
+  1;
   const [agreeTerms, setAgreeTerms] = useState(false);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ const UpdateSubscription = () => {
 
     try {
       const response = await fetch(
-        `${API_URL}/api/subscription/update_subscription`,
+        "https://forex-trading-app-iqbg.onrender.com/api/subscription/update/subscription",
         {
           method: "PUT",
           headers: {
